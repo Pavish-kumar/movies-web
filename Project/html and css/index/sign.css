@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #fff;
+}
+.container
+{
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px 0 #8f8f8f;
+}
+.container .form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+.container .form h2
+{
+    color: #000;
+    letter-spacing: 0.1rem;
+}
+.container .form .inputbox
+{
+    position: relative;
+    width: 300px;
+}
+.container .form .inputbox input
+{
+    padding: 12px 10px 12px 48px;
+    border: none;
+    width: 100%;
+    color: #000;
+    font-weight: 300;
+    border-radius: 25px;
+    font-size: 1em;
+    box-shadow: 0 5px 10px 0 #8f8f8f;
+    transition: 0.5s;
+    outline: none;
+}
+.container .form .inputbox span
+{
+     position: absolute;
+     left: 0;
+     padding: 12px 10px 12px 48px;
+     pointer-events: none;
+     font-size: 1em;
+     font-weight: 300;
+     transition: 0.5s;
+     letter-spacing: 0.05em;
+     color: rgba(11, 10, 10, 1);
+}
+.container .form .inputbox input:valid ~ span,
+.container .form .inputbox input:focus ~ span
+{
+    color: #302e2e;
+    border: 2px solid #8f8f8f;
+    background: #fff;
+    transform: translateX(25px) translateY(-7px);
+    font-size: 0.7em;
+    padding: 0 8px;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+}
+
+.container .form .inputbox i
+{
+    position: absolute;
+    top: 15px;
+    left: 16px;
+    width: 25px;
+    padding: 2px 0;
+    padding-right: 8px;
+    color: #000;
+    border-right: 1px solid #000;
+}
+.container .form .inputbox input[type="submit"]
+{
+    background: #8f8f8f;
+    color: #fff;
+    padding: 10px 0;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 5px 10px 0 #8f8f8f;
+}
+.container .form p
+{
+    color: #000;
+    font-size: 0.75em;
+    font-weight: 300;
+}
+.container .form p a
+{
+      font-weight: 500;
+      color: #000;
+}
+.container .form .inputbox input[type="submit"]:hover
+{
+    background: #000;
+}
+
